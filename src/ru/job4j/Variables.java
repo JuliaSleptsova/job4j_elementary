@@ -6,13 +6,13 @@ public class Variables {
         float length = (float) 78.0332;
         boolean baby = true;
 
-        short age;
-        char gender;
-        float height;
-        int numberOfBricks;
-        double numberOfBacteria;
-        double distanceToSpace;
-        boolean workPermit;
-        double fileSize;
+        short age = 20;
+        char gender = 'M';
+        float height = 181.3f;
+        int numberOfBricks = 333323;
+        long numberOfBacteria = 92233720368547L;
+        double distanceToSpace = 384467;
+        boolean workPermit = true;
+        double fileSize = 1.1;
     }
 }
