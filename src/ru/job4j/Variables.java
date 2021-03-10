@@ -13,6 +13,6 @@ public class Variables {
         long numberOfBacteria = 92233720368547L;
         double distanceToSpace = 384467;
         boolean workPermit = true;
-        double fileSize = 1.1;
+        double fileSize = 1.2;
     }
 }
