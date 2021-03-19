@@ -5,11 +5,9 @@ public class SortSelected {
         for (int i = 0; i < data.length; i++) {
             int min = MinDiapason.findMin(data, i, data.length - 1);
             int index = FindLoop.indexOf(data, min, i, data.length);
-            if (data[i] > data[index]) {
-                int temp = data[i];
-                data[i] = data[index];
-                data[index] = temp;
-            }
+            int temp = data[i];
+            data[i] = data[index];
+            data[index] = temp;
         }
         return data;
     }
