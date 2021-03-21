@@ -30,4 +30,26 @@ public class MatrixCheck {
         }
         return rsl;
     }
+
+    public static boolean extractDiagonalBoolean(char[][] board) {
+        boolean rsl = false;
+        for (int i = 0; i < board.length; i++) {
+             if (board[i][i] == 'X') {
+                 rsl = true;
+                 break;
+             }
+        }
+        return rsl;
+    }
+
+    public static boolean isWin(char[][] board) {
+        boolean result = false;
+        for (int i = 0; i < board.length; i++) {
+            if (extractDiagonalBoolean(board) && (monoHorizontal(board, i) || monoVertical(board, i))) {
+                result = true;
+                break;
+            }
+        }
+        return result;
+    }
 }
