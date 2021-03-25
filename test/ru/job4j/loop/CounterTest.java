@@ -46,9 +46,18 @@ public class CounterTest {
     @Test
     public void whenSumEvenNumbersFrom3To8Then18() {
         int start = 3;
-        int finish = 8;
+        int finish = 192000234;
         int result = Counter.sumByEven(start, finish);
-        int expected = 18;
+        int expected = 1995341292;
+        Assert.assertEquals(expected, result);
+    }
+
+    @Test
+    public void MywhenSumEvenNumbersFrom3To8Then18() {
+        int start = 3;
+        int finish = 192000234;
+        int result = Counter.sumByEvenMy(start, finish);
+        int expected = 1995341292;
         Assert.assertEquals(expected, result);
     }
 

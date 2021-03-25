@@ -18,4 +18,15 @@ public class Counter {
         }
         return sum;
     }
+
+    public static int sumByEvenMy(int start, int finish) {
+        int sum = 0;
+        if (start % 2 != 0) {
+            start++;
+        }
+        for (int i = start; i <= finish; i += 2) {
+            sum = sum + i;
+        }
+        return sum;
+    }
 }
