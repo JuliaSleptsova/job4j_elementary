@@ -5,7 +5,6 @@ public class Variables {
         //int age = 18;
         float length = (float) 78.0332;
         boolean baby = true;
-
         short age = 20;
         char gender = 'M';
         float height = 181.3f;
