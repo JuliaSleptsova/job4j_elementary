@@ -5,7 +5,7 @@ public class Cat {
     private String name;
 
     public void show() {
-        System.out.println(this.name + '\n' + this.food);
+        System.out.println(this.name + System.lineSeparator() + this.food);
     }
 
     public void eat(String meat) {
